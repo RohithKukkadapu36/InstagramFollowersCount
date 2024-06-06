@@ -22,7 +22,7 @@ public class GetTestDataFromExcel {
 		for(int i=0;i<rowCount;i++) {
 			String key = sh.getRow(i).getCell(0).getStringCellValue();
 			if(key.equalsIgnoreCase(keyName)) {
-				value = sh.getRow(i).getCell(i).getStringCellValue();
+				value = sh.getRow(i).getCell(1).getStringCellValue();
 			}
 		}
 		
